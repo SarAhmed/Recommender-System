@@ -44,7 +44,7 @@ intersection between the items purchased by the current user and other users.
 ```
 > recommendBasedOnItemsInCart "A" ["dress"]
 "shoes"
-recommendBasedOnItemsInCart "A" []
+> recommendBasedOnItemsInCart "A" []
 "sugar
 ```
 #### recommendBasedOnUsers
