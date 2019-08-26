@@ -62,4 +62,4 @@ between the items purchased by the current user and other users.
 "earphone"
 ```
 ## Acknowledgment
-This project outline was designed by the MET department at the German University in Cairo.
+This project outline was designed by the MET department at the German University in Cairo [link](http://met.guc.edu.eg/Download.ashx?id=29081&file=HaskellProjectDescription_2019_updated_11_4_2019_29081.pdf).
