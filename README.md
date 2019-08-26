@@ -61,5 +61,5 @@ between the items purchased by the current user and other users.
 > recommendBasedOnUsers "C"
 "earphone"
 ```
-## Acknowledgments
-This project was designed by the MET department at the German University in Cairo
+## Acknowledgment
+This project was designed by the MET department at the German University in Cairo.
