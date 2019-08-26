@@ -13,8 +13,8 @@ Given the below toy dataset where <b>users</b> is a list of the users, <b>items<
 ("D", [["milk", "meat", "chicken", "yogurt"], ["beans", "cereal", "flour", "sugar"], ["tomatoes", "oil", "chicken"]]), 
 ("E", [])
 ]<br/>
-### Functions
-#### recommend
+### Functions:
+####      recommend
 recommend :: String -> [String] -> String
 The function recommend takes a user and his/her cart and recommend to the user an item accordingly
 ```
