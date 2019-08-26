@@ -86,7 +86,7 @@ helper2  (x:xs) l2 |exists x l2 = (freqListCartAndItemsHelper1 x l2):(helper2 xs
 				   
 purchasesIntersectionHelper [] [] [] = []				   
 purchasesIntersectionHelper (x:xs) (y:ys) (z:zs) = (z,(helper2 x y)):(purchasesIntersectionHelper xs ys zs)
--- we don't need it now but we will need it in the main functions to get the right input to purchaseIntersection
+
 remove3 l [] = []
 remove3 l ((a,x):xs) | l==a = xs
 		| otherwise = (a,x):remove3 l xs 
@@ -131,7 +131,6 @@ recommendEmptyCart a |length c == 0 =""
 
 test a l =b where (b,c)=(freqListCart a l,probabilityList b)
 
--- 0 should be changed to empty String
 test a l =freqListCart a l
 recommendBasedOnItemsInCart a l |freqListItems a ==[]=""
 			|l==[] =recommendEmptyCart a
