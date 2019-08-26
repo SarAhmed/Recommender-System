@@ -13,7 +13,7 @@ createEmptyFreqList (x:xs)= (x,[]):createEmptyFreqList xs
 occur :: Eq a=> a ->[[a]]->[[a]] 			
 occur a [] = []
 occur a (x:xs) |elem a x = x:(occur a xs)
-			   |otherwise = occur a xs
+	|otherwise = occur a xs
 
 count1D :: Eq a => a->[a]->Int
 count1D a [] = 0
@@ -25,13 +25,13 @@ count2D a (x:xs) = count1D a x + count2D a xs
 
 countAll [] l = []
 countAll (x:xs) l|count2D x l ==0  = countAll xs l
-				 |otherwise = (x,(count2D x l)):countAll xs l
+	|otherwise = (x,(count2D x l)):countAll xs l
 remove a [] = []			 
 remove a (x:xs)  | a/=x = x:remove a xs
-				 |otherwise = xs
+	|otherwise = xs
 remove2 (a,c) [] = []
 remove2 (a,c) ((x,b):xs)| a/=x = (x,b):(remove2 (a,c) xs)
-					|otherwise = xs
+	|otherwise = xs
 					
 getAllUserStatsHelper i ph [] = []
 getAllUserStatsHelper i ph (y:ys) = (y,countAll r1 r2): (getAllUserStatsHelper i ph  ys) where (r1 , r2) = ((remove y i),(occur y  ph)) 
