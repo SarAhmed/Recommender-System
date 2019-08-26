@@ -62,4 +62,4 @@ between the items purchased by the current user and other users.
 "earphone"
 ```
 ## Acknowledgment
-This project was designed by the MET department at the German University in Cairo.
+This project outline was designed by the MET department at the German University in Cairo.
