@@ -17,7 +17,7 @@ Given the below toy dataset where <b>users</b> is a list of the users, <b>items<
 #### recommend
 recommend :: String -> [String] -> String
 The function recommend takes a user and his/her cart and recommend to the user an item accordingly
-```
+```hs
 > recommend "A" ["earphone"]
 "laptop"
 > recommend "E" ["dress"]
@@ -28,7 +28,7 @@ The function recommend takes a user and his/her cart and recommend to the user a
 #### recommendEmptyCart
 recommendEmptyCart :: String -> String
 When the users cart is empty, the function recommendEmptyCart could be used to recommend an item to the user by 50% based on previously purchased items and 50% based on the intersection between the items purchased by the current user and other users.
-```
+```hs
 > recommendEmptyCart "E"
 "laptop"
 > recommendEmptyCart "E"
@@ -41,7 +41,7 @@ recommendBasedOnItemsInCart :: String -> [String] -> String
 The function recommendBasedOnItems is used to recommend an item to the user based on the items
 currently in the user’s cart and the previously purchased items by 50% and the other 50% based on the
 intersection between the items purchased by the current user and other users.
-```
+```hs
 > recommendBasedOnItemsInCart "A" ["dress"]
 "shoes"
 > recommendBasedOnItemsInCart "A" []
@@ -51,7 +51,7 @@ intersection between the items purchased by the current user and other users.
 recommendBasedOnUsers :: String -> String
 The function recommendBasedOnUsers is used to recommend an item to the user based on the intersection
 between the items purchased by the current user and other users.
-```
+```hs
 > recommendBasedOnUsers "B"
 "meat"
 > recommendBasedOnUsers "A"
